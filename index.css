@@ -1,0 +1,141 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*header start*/
+
+header{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color:rgba(30, 101, 255, 0.829);
+    height: 63px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.829);
+}
+
+header h1{
+    padding-left: 15px;
+    color: white;
+    font-size:larger;
+    font-weight:200;
+}
+/*header end*/
+
+/*Containter*/
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    width: 95%;
+}
+
+
+/*Contact + Search*/
+
+
+.numberOfContact{
+    position: relative;
+    width: 50%;
+}
+.numberOfContact h1{ 
+    position: relative;
+    font-size:x-large;
+    left: 4%;
+    font-weight: 200;
+    font-size: xx-large;
+
+}
+.searchbar{
+    position: relative;
+    width: 50%;
+}
+.Search{
+    position:relative;
+    width: 92%;
+    left: 3%;
+}
+
+input {
+    position: relative;
+    border: solid 1.5px rgba(0, 0, 0, 0.5);
+    border-radius: 0.25rem;
+    padding: 1rem;
+    font-size: 1rem;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    width: 100%;
+    color: rgba(30, 101, 255, 0.829);
+    padding-left: 40px;
+}
+label{
+    position: absolute;
+    left: 40px;
+    color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+}
+i{
+    position: absolute;
+    left: 16px;
+    color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+}
+input:focus{
+    outline: none;
+    border: 2.5px solid rgba(30, 101, 255, 0.829);
+}
+input:focus ~ label{
+    background-color: white;
+    transform: translateY(-50%) scale(0.8);
+    color: rgba(30, 101, 255, 0.829);
+    left: 5px;
+    transition: ease 0.5s;
+}
+input:focus ~ i{
+    background-color: white;
+    color: rgba(30, 101, 255, 0.829);
+    left: 16px;
+    transition: ease 0.5s;
+}
+
+/*contact + search end*/
+
+
+/*secondContainer*/
+
+.secondContainer{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    top: 10px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    position: relative;
+    width: 24%;
+    height: 300px;
+    border: solid;
+}
+.contact:hover{
+    box-shadow: 0 10px 10px  rgba(0, 0, 0, 0.6);
+    transition: ease 0.5s;
+}
