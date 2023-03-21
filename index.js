@@ -8,8 +8,6 @@ for (let i = 0; i < 100; i++) {
       const contact = data.results[0];
       const name = `${contact.name.first} ${contact.name.last}`;
       const email = contact.email;
-      const phone = contact.phone;
-      const address = `${contact.location.street.name}, ${contact.location.city}, ${contact.location.state}, ${contact.location.country}`;
       const imageUrl = contact.picture.medium;
 
       const contactDiv = document.createElement('div');
@@ -31,17 +29,10 @@ for (let i = 0; i < 100; i++) {
       emailElement.classList.add('contact-email');
       emailElement.innerText = email;
 
-      const phoneElement = document.createElement('div');
-      phoneElement.innerText = phone;
-
-      const addressElement = document.createElement('div');
-      addressElement.innerText = address;
 
       contactDiv.appendChild(image);
       contactDiv.appendChild(nameElement);
       contactDiv.appendChild(emailElement);
-      contactDiv.appendChild(phoneElement);
-      contactDiv.appendChild(addressElement);
 
       contactList.appendChild(contactDiv);
     });
