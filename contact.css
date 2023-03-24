@@ -1,0 +1,18 @@
+/* This is the same as the inline style in the HTML */
+.contact-card {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  .contact-card h2 {
+    margin-top: 0;
+  }
+  .contact-card img {
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+  .contact-card p {
+    margin: 8px 0;
+  }
+  

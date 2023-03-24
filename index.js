@@ -33,7 +33,6 @@ for (let i = 0; i < 100; i++) {
       contactDiv.appendChild(image);
       contactDiv.appendChild(nameElement);
       contactDiv.appendChild(emailElement);
-
       contactList.appendChild(contactDiv);
     });
 }

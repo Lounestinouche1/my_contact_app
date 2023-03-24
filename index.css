@@ -132,6 +132,7 @@ input:focus ~ i{
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     text-align: center;
     width: 22%;
     height: 300px;
